@@ -5,21 +5,21 @@
 class AgentGuard < Formula
   desc "AI Agent, CLI tools, and MCP server security scanning tool"
   homepage "https://github.com/imdlan/AIAgentGuard"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.3.0/agent-guard_1.3.0_darwin_amd64.tar.gz"
-      sha256 "36eb6ec6a7d21b7b54c5cb683d787713393df1fe93c4606e3a61fe879c55c4b2"
+      url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.4.0/agent-guard_1.4.0_darwin_amd64.tar.gz"
+      sha256 "6e139eecfe383ea59035945424d10c37b575893c35949aa83099db89a48d97f4"
 
       def install
         bin.install "agent-guard"
       end
     end
     on_arm do
-      url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.3.0/agent-guard_1.3.0_darwin_arm64.tar.gz"
-      sha256 "33d8ee7fc6ad9f1953f8c20dc22fb7e76fddadca3047fc6faa2573d0b737cf46"
+      url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.4.0/agent-guard_1.4.0_darwin_arm64.tar.gz"
+      sha256 "3ae4022413a98c9ebeb1f348dbf42f848c156959dbb123bfbc8cdbd8663ed651"
 
       def install
         bin.install "agent-guard"
@@ -30,8 +30,8 @@ class AgentGuard < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.3.0/agent-guard_1.3.0_linux_amd64.tar.gz"
-        sha256 "5ec6038bf9dc377b3dcc244f4dacb1244187ed973f37babb601b7bcf4726e433"
+        url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.4.0/agent-guard_1.4.0_linux_amd64.tar.gz"
+        sha256 "8aba95b0eb2ecd4a875e9b9a99b230a85ec91ceb89d163e8330b236513eb71ff"
 
         def install
           bin.install "agent-guard"
@@ -40,8 +40,8 @@ class AgentGuard < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.3.0/agent-guard_1.3.0_linux_arm64.tar.gz"
-        sha256 "8e713b45b24ba5baa052d15d32eab51822edad5fb5b18cfba552eac8b81f3c14"
+        url "https://github.com/imdlan/AIAgentGuard/releases/download/v1.4.0/agent-guard_1.4.0_linux_arm64.tar.gz"
+        sha256 "b820c7f7e08c99793ddc802da4a21a2499db2c322c22865ba12cd8f74729e5ed"
 
         def install
           bin.install "agent-guard"
